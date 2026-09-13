@@ -1,6 +1,6 @@
 # Agent Handover Log
 
-Last updated by: Claude Code on 12 September 2026 (module 9)
+Last updated by: Claude Code on 12 September 2026 (module 10)
 
 ## Protocol for Claude Code and Antigravity
 
@@ -19,7 +19,7 @@ Last updated by: Claude Code on 12 September 2026 (module 9)
 
 ## Current Project Status
 
-- **Live Modules**: Modules 1, 2, 3, 4, 5, 6, 7, 8, and 9 are built, interactive, and integrated.
+- **Live Modules**: Modules 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 are built, interactive, and integrated.
 - **Architecture**:
   - `src/`: Modular React components (`App.jsx`, `StartPage.jsx`, `Navigation.jsx`, `modulesData.js`, `styles.css`).
   - `src/modules/`: Module components (`Module01Sampling.jsx`, `Module02RandomWalk.jsx`, `Module03Qubit.jsx`, `Module04Measurement.jsx`).
@@ -30,11 +30,21 @@ Last updated by: Claude Code on 12 September 2026 (module 9)
   - Hash routing (`#start`, `#module-1`, `#module-2`, `#module-3`, `#module-4`).
   - Bottom pagination stepping between active modules.
   - Buttons and selector options for unbuilt modules (Module 0 and Modules 5 to 12) are disabled.
-- **Next up**: Module 10 (*The quantum walk*).
+- **Next up**: Module 11 (*Entanglement, and the sphere*).
 
 ---
 
 ## Change Log
+
+### 12 September 2026 (module 10) — Claude Code
+- Built Module 10: *The quantum walk* (`src/modules/Module10QuantumWalk.jsx`).
+- Simulation: Hadamard coin, |0⟩ start at position 0, real-amplitude state arrays of size 41 (positions −20 to +20). `doStep` applies H then conditional shift (coin=0 left, coin=1 right) per position. Classical binomial probabilities computed analytically for comparison.
+- Interactive: step counter, +1/+5/+10 buttons (capped at 20), Reset. SVG bar chart: blue filled bars (quantum), plum outline bars (classical, same step count). Stat row below chart: quantum peak position/%, classical peak position/%, quantum spread (n/√2), classical spread (√n).
+- Honest about the asymmetric lean: starting coin |0⟩ is not symmetric; walk drifts left. Aside defers the symmetric complex-coin version to module 11.
+- Prose: what changed (coin→qubit, H each step, controlled shift), why centre empties (destructive interference on routes to central positions), how fast it spreads (linear n vs √n), connection to quantum search.
+- Defined "quantum walk" in term-ledger.md.
+- Updated App.jsx, modulesData.js, AGENTS.md.
+- Rebuild: index.html 370 KB.
 
 ### 12 September 2026 (module 9) — Claude Code
 - Built Module 9: *Controlled operations* (`src/modules/Module09Controlled.jsx`).

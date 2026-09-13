@@ -94,8 +94,8 @@ export const MODULES = [
     slug: "module-10",
     title: "The quantum walk",
     subtitle: "Module 2's line with the coin swapped",
-    status: "unbuilt",
-    statusLabel: "Not built yet",
+    status: "built",
+    statusLabel: "Available",
     idea: "Walking the line again with a quantum coin: cancelling paths leave the centre hollow and push probability to the edges."
   },
   {

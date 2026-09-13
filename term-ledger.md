@@ -28,6 +28,7 @@ Check this file before writing any module, and add to it after.
 | superposition | 7 (aside) | used in aside only; glossed as "both amplitudes are non-zero at the same time"; word noted as attracting mystical readings |
 | circuit | 8 | "a complete description of what a quantum computer does": starting state, ordered gates, measurement; score metaphor introduced |
 | controlled operation | 9 | CNOT defined: gate that only acts on a target qubit when a control qubit is |1⟩; two-qubit state space introduced |
+| quantum walk | 10 | defined as the classical walk with the coin replaced by a qubit; H applied to coin each step, then conditional shift; interference suppresses centre and concentrates probability at edges |
 
 ## Queued, do not use early
 
