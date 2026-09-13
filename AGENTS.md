@@ -1,6 +1,6 @@
 # Agent Handover Log
 
-Last updated by: Claude Code on 12 September 2026 (module 10)
+Last updated by: Claude Code on 13 September 2026 (module 11)
 
 ## Protocol for Claude Code and Antigravity
 
@@ -19,7 +19,7 @@ Last updated by: Claude Code on 12 September 2026 (module 10)
 
 ## Current Project Status
 
-- **Live Modules**: Modules 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 are built, interactive, and integrated.
+- **Live Modules**: Modules 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11 are built, interactive, and integrated.
 - **Architecture**:
   - `src/`: Modular React components (`App.jsx`, `StartPage.jsx`, `Navigation.jsx`, `modulesData.js`, `styles.css`).
   - `src/modules/`: Module components (`Module01Sampling.jsx`, `Module02RandomWalk.jsx`, `Module03Qubit.jsx`, `Module04Measurement.jsx`).
@@ -30,11 +30,21 @@ Last updated by: Claude Code on 12 September 2026 (module 10)
   - Hash routing (`#start`, `#module-1`, `#module-2`, `#module-3`, `#module-4`).
   - Bottom pagination stepping between active modules.
   - Buttons and selector options for unbuilt modules (Module 0 and Modules 5 to 12) are disabled.
-- **Next up**: Module 11 (*Entanglement, and the sphere*).
+- **Next up**: Module 12 (*Reality check*), then Module 0 (*Cold open*, build last).
 
 ---
 
 ## Change Log
+
+### 13 September 2026 (module 11) — Claude Code
+- Built Module 11: *Entanglement, and the sphere* (`src/modules/Module11Entanglement.jsx`).
+- Interactive: Bell state panel showing four amplitudes as a bar/value list; "Measure qubit 1" button randomly collapses to |00⟩ or |11⟩ (50/50), displays which qubit 1 result locked qubit 2; running tally of |00⟩ and |11⟩ counts (|01⟩ and |10⟩ always zero).
+- Bloch sphere: SVG oblique projection showing north pole |0⟩, south pole |1⟩, equatorial +X (H|0⟩), −X (H|1⟩), +Y state (symmetric walk coin), −Y; Z/X/Y axes drawn; front equatorial arc solid, back dashed; state dots colour-coded.
+- Prose: phase defined (complex amplitude's angle, invisible to measurement, revealed by gates); +X vs +Y state table (same measurement stats, different phase, different sphere location); sphere section (all gates as rotations, equator = equal chance states, compass = phase); angle-doubling debt paid (cos(θ/2) parametrisation, θ=2φ); Bell state named; entanglement defined (state cannot be factored); what entanglement is not (no faster-than-light signalling).
+- Aside: +Y state as the symmetric quantum walk coin; four Bell states noted.
+- term-ledger.md: phase, Bloch sphere (full), entanglement moved to Defined.
+- Updated App.jsx, modulesData.js, AGENTS.md.
+- Rebuild: index.html 394 KB.
 
 ### 12 September 2026 (module 10) — Claude Code
 - Built Module 10: *The quantum walk* (`src/modules/Module10QuantumWalk.jsx`).

@@ -11,6 +11,7 @@ import ModuleSevenInterference from "./modules/Module07Interference.jsx";
 import ModuleEightCircuits from "./modules/Module08Circuits.jsx";
 import ModuleNineControlled from "./modules/Module09Controlled.jsx";
 import ModuleTenQuantumWalk from "./modules/Module10QuantumWalk.jsx";
+import ModuleElevenEntanglement from "./modules/Module11Entanglement.jsx";
 
 function getInitialView() {
   if (typeof window === "undefined") return "start";
@@ -25,6 +26,7 @@ function getInitialView() {
   if (hash === "#module-8" || hash === "#8") return 8;
   if (hash === "#module-9" || hash === "#9") return 9;
   if (hash === "#module-10" || hash === "#10") return 10;
+  if (hash === "#module-11" || hash === "#11") return 11;
   return "start";
 }
 
@@ -188,6 +190,19 @@ export default function App() {
             </div>
             <ModulePagination
               activeModuleId={10}
+              onSelectModule={(id) => navigateTo(id)}
+              onGoHome={() => navigateTo("start")}
+            />
+          </div>
+        )}
+
+        {activeView === 11 && (
+          <div className="module-container">
+            <div className="module-content-area">
+              <ModuleElevenEntanglement />
+            </div>
+            <ModulePagination
+              activeModuleId={11}
               onSelectModule={(id) => navigateTo(id)}
               onGoHome={() => navigateTo("start")}
             />

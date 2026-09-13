@@ -29,15 +29,15 @@ Check this file before writing any module, and add to it after.
 | circuit | 8 | "a complete description of what a quantum computer does": starting state, ordered gates, measurement; score metaphor introduced |
 | controlled operation | 9 | CNOT defined: gate that only acts on a target qubit when a control qubit is |1⟩; two-qubit state space introduced |
 | quantum walk | 10 | defined as the classical walk with the coin replaced by a qubit; H applied to coin each step, then conditional shift; interference suppresses centre and concentrates probability at edges |
+| phase | 11 | the angle component of a complex amplitude; invisible to measurement but revealed by gates; corresponds to azimuthal angle on Bloch sphere |
+| Bloch sphere | 11 (full) | full treatment: complex amplitudes, θ/φ parametrisation, all single-qubit gates as rotations; angle-doubling debt from module 3 explained |
+| entanglement | 11 | Bell state |Φ+⟩ = (|00⟩+|11⟩)/√2 defined; entanglement = state cannot be factored into product of two independent single-qubit states |
 
 ## Queued, do not use early
 
 | Term | Will be defined in |
 | --- | --- |
 
-| controlled operation | 9 |
-| entanglement | 11 |
-| phase | 11 |
 | noise, depth | 12 |
 
 ## Plain substitutes used in the meantime

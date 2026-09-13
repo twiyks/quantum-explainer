@@ -103,8 +103,8 @@ export const MODULES = [
     slug: "module-11",
     title: "Entanglement, and the sphere",
     subtitle: "Bell state, and the circle growing its third axis",
-    status: "unbuilt",
-    statusLabel: "Not built yet",
+    status: "built",
+    statusLabel: "Available",
     idea: "The circle expands into the Bloch sphere with complex numbers, and pairs of qubits form correlated Bell states."
   },
   {
